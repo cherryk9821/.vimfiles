@@ -39,13 +39,13 @@ augroup End
 
 " neocomplete setting
 let g:neocomplete#enable_at_startup = 1 
-let g:neocomplete#max_list = 20
 if !exists('g:neocomplete#sources#omni#input_patterns') 
 	let g:neocomplete#sources#omni#input_patterns = {} 
 endif 
 set completeopt=menuone 
 "" python
 autocmd FileType python setlocal omnifunc=jedi#completions
+let g:jedi#completions_enabled = 0
 let g:jedi#auto_vim_configuration = 0
 if !exists('g:neocomplete#force_omni_input_patterns')
 	let g:neocomplete#force_omni_input_patterns = {}
