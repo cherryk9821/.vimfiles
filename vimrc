@@ -39,6 +39,7 @@ augroup End
 
 " neocomplete setting
 let g:neocomplete#enable_at_startup = 1 
+let g:neocomplete#max_list = 20
 if !exists('g:neocomplete#sources#omni#input_patterns') 
 	let g:neocomplete#sources#omni#input_patterns = {} 
 endif 
