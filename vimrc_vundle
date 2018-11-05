@@ -1,0 +1,21 @@
+set nocompatible
+filetype off
+
+
+" Vundle setting
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+"" You can add Plugin under this line.
+"" example: Plugin '[Github Author]/[Github repo]'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
+
+call vundle#end()
+
+
+filetype plugin indent on
